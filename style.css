@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f8ff;
+}
+.main-header {
+  display: flex;
+  /* justify-content: space-around; */
+  margin: 24px 150px 100px;
+  /* padding: 0 150px; */
+  align-items: center;
+  gap: 590px;
+}
+.logo-section img {
+  width: 135px;
+  height: 82px;
+}
+.navigation-bar {
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+}
+ul li a {
+  text-decoration: none;
+}
+/* end main headersection  */
+.banner-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 150px;
+  /* display: block; */
+}
+.banner-heading {
+  font-size: 55px;
+  font-weight: bold;
+  /* max-width: 500px; */
+  margin-bottom: 13px;
+}
+.fresh-flowers {
+  color: #e95a08;
+  display: block;
+}
+.banner-description {
+  font-size: 22px;
+  color: #c7c9cf;
+}
+.banner-img img {
+  width: 500px;
+  height: 300px;
+}
