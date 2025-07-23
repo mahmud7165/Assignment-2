@@ -33,22 +33,71 @@ ul li a {
   align-items: center;
   padding: 0 150px;
   /* display: block; */
+  margin-bottom: 100px;
 }
 .banner-heading {
   font-size: 55px;
   font-weight: bold;
   /* max-width: 500px; */
   margin-bottom: 13px;
+  font-family: "Noto Serif", serif;
 }
 .fresh-flowers {
   color: #e95a08;
-  display: block;
+  /* display: block; */
 }
 .banner-description {
   font-size: 22px;
   color: #c7c9cf;
+  font-family: "Inter", sans-serif;
 }
 .banner-img img {
   width: 500px;
   height: 300px;
+}
+/* end headersection */
+.card-section {
+}
+.card-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.card-headline {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Noto Serif", serif;
+}
+.card-container {
+  margin: 0 150px 200px;
+  /* flex-direction: column; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.card-1 {
+  width: 270px;
+  height: 480px;
+}
+card-1 img {
+  height: 322px;
+  width: 270px;
+}
+.card-name {
+  font-weight: medium;
+  font-size: 22px;
+  text-align: center;
+}
+.card-price {
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+}
+.card-btn {
+  background-color: #e95a08;
+  color: #ffffff;
+  font-size: 16px;
+  /* font-weight: semi bold; */
+  padding: 16px 40px;
+  width: 270px;
+  border: none;
 }
