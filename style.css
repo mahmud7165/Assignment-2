@@ -18,7 +18,7 @@
 }
 .navigation-bar {
 }
-ul {
+.navigation-bar ul {
   display: flex;
   list-style: none;
   gap: 48px;
@@ -68,7 +68,7 @@ ul li a {
   font-family: "Noto Serif", serif;
 }
 .card-container {
-  margin: 0 150px 200px;
+  margin: 0 150px 100px;
   /* flex-direction: column; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -100,4 +100,43 @@ card-1 img {
   padding: 16px 40px;
   width: 270px;
   border: none;
+}
+.flower-lover {
+  margin: 0 150px 100px;
+  display: flex;
+  gap: 50px;
+}
+.flower-lover img {
+  width: 400px;
+  height: 450px;
+}
+.flower-lover-heading {
+  font-weight: bold;
+  font-size: 50px;
+  font-family: "Noto Serif", serif;
+}
+/* .flower-lover-descript ul li {
+  gap: 10px;
+} */
+.lovers-msg {
+  font-size: 22px;
+  color: #a9aaaf;
+  font-family: "Inter", sans-serif;
+  /* gap: 10px; */
+  margin-bottom: 20px;
+}
+.image-lover-photo {
+  position: relative;
+}
+/* .badge img {
+  width: 50px;
+  height: 50px;
+} */
+.badge img {
+  position: absolute;
+  bottom: 70%;
+  left: 60%;
+  width: 250px;
+  height: 250px;
+  background: none;
 }
