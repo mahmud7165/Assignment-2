@@ -140,3 +140,115 @@ card-1 img {
   height: 250px;
   background: none;
 }
+/* end flower loverpart */
+.flower-part {
+  margin: 0 150px 100px;
+}
+/* .flower-heading {
+  text-align: center;
+} */
+.flower-heading h2 {
+  font-weight: bold;
+  font-size: 50px;
+  /* color: rebeccapurple; */
+  text-align: center;
+  margin-bottom: 16px;
+}
+.flower-heading p {
+  font-size: 22px;
+  color: #a9aaaf;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.flower-image-section {
+  display: flex;
+  /* align-items: center; */
+  gap: 20px;
+}
+/* .small-images {
+  background-color: none;
+} */
+
+.img-1 h4 {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Noto Serif", serif;
+  /* margin-bottom: 20px; */
+}
+.img-1 p {
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.img-1 {
+  background-image: url("./images/deal-bloom.png"); /* ছবির নাম বা path */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  height: 200px;
+  width: 350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.img-2 h4 {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Noto Serif", serif;
+}
+.img-2 p {
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+.img-2 {
+  background-image: url("./images/deal-ana.png"); /* ছবির নাম বা path */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  height: 200px;
+  width: 350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.large-image {
+  background-image: url(./images/deal-zabo.png);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  height: 420px;
+  width: 700px;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.large-image h2 {
+  font-weight: bold;
+  font-size: 40px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Noto Serif", serif;
+}
+.large-image h4 {
+  font-size: 28px;
+  /* font-weight: semi bold; */
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
