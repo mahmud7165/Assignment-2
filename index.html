@@ -21,6 +21,7 @@
     />
   </head>
   <body>
+    <div class="container">
     <header>
       <nav class="main-header">
         <div class="logo-section">
@@ -31,12 +32,10 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">About us </a></li>
-            <li>
-              <a href="#"
-                ><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</a
-              >
-            </li>
           </ul>
+          <div>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</a>
+          </div>
         </div>
       </nav>
       <!-- end main headersection -->
@@ -120,7 +119,7 @@
           </div>
         </div>
       </div>
-      <section>
+      <section  class="custom-padding">
         <div class="flower-lover">
           <div class="image-lover-photo">
             <img src="./images/flower-store.png" alt="" />
@@ -132,7 +131,7 @@
 
           <div class="flower-lover-descript">
             <h2 class="flower-lover-heading">
-              Flower & Plants <br />
+              Flower & Plants
               Lover
             </h2>
             <ul>
@@ -185,16 +184,19 @@
           </div>
         </div>
       </section>
-      <!-- end flowersection -->
+      <!-- end flower section -->
+    </div>
+
       <section>
         <div class="bunch">
           <h2>Join the colorful Bunch</h2>
           <div class="email-section">
-            <textarea
+            <input
+              type="email"
               name="text"
               id="email"
               placeholder="write email"
-            ></textarea>
+            />
             <button>Subscribe</button>
           </div>
         </div>

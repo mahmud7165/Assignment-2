@@ -4,36 +4,46 @@
   box-sizing: border-box;
   background-color: #f5f8ff;
 }
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 .main-header {
   display: flex;
-  /* justify-content: space-around; */
-  margin: 24px 150px 100px;
+  justify-content: space-between;
+  margin: 24px 0 100px;
+  /* width: 1140px; */
   /* padding: 0 150px; */
   align-items: center;
-  gap: 590px;
+  /* gap: 590px; */
 }
 .logo-section img {
   width: 135px;
   height: 82px;
 }
 .navigation-bar {
+  display: flex;
+  gap: 40px;
 }
 .navigation-bar ul {
   display: flex;
   list-style: none;
-  gap: 48px;
+  gap: 40px;
 }
 ul li a {
   text-decoration: none;
+  /* white-space: nowrap; */
+  color: #a9aaaf;
 }
 /* end main headersection  */
 .banner-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 150px;
+  /* padding: 0 150px; */
   /* display: block; */
   margin-bottom: 100px;
+  gap: 60px;
 }
 .banner-heading {
   font-size: 55px;
@@ -68,7 +78,7 @@ ul li a {
   font-family: "Noto Serif", serif;
 }
 .card-container {
-  margin: 0 150px 100px;
+  margin: 0 0 150px;
   /* flex-direction: column; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -102,13 +112,14 @@ card-1 img {
   border: none;
 }
 .flower-lover {
-  margin: 0 150px 100px;
+  margin: 0 0 100px;
   display: flex;
-  gap: 50px;
+  gap: 100px;
 }
 .flower-lover img {
-  width: 400px;
-  height: 450px;
+  width: 540px;
+  height: 597px;
+  margin-top: -38px;
 }
 .flower-lover-heading {
   font-weight: bold;
@@ -133,16 +144,20 @@ card-1 img {
   height: 50px;
 } */
 .badge img {
+  /* border-radius: 50%; */
   position: absolute;
-  bottom: 70%;
-  left: 60%;
+  /* bottom: 100%; */
+  top: -115px;
+  right: -115px;
+  /* transition: translate(50%,50%); */
   width: 250px;
   height: 250px;
   background: none;
+  animation: badge 5s linear infinite;
 }
 /* end flower loverpart */
 .flower-part {
-  margin: 0 150px 100px;
+  margin: 0 0 100px;
 }
 /* .flower-heading {
   text-align: center;
@@ -163,7 +178,7 @@ card-1 img {
 .flower-image-section {
   display: flex;
   /* align-items: center; */
-  gap: 20px;
+  gap: 30px;
 }
 /* .small-images {
   background-color: none;
@@ -189,7 +204,7 @@ card-1 img {
   background-repeat: no-repeat;
   /* background-position: center; */
   height: 200px;
-  width: 350px;
+  width: 360px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -216,7 +231,7 @@ card-1 img {
   background-repeat: no-repeat;
   /* background-position: center; */
   height: 200px;
-  width: 350px;
+  width: 360px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -230,7 +245,7 @@ card-1 img {
   background-repeat: no-repeat;
   /* background-position: center; */
   height: 420px;
-  width: 700px;
+  width: 750px;
   /* position: relative; */
   display: flex;
   flex-direction: column;
@@ -288,9 +303,17 @@ card-1 img {
   width: 270px;
   border: none;
 }
+@keyframes badge {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* end mainpart */
 footer {
-  margin: 0 150px 50px;
+  margin: 0 100px 50px;
   /* display: flex; */
 }
 .footer-section {
@@ -330,4 +353,93 @@ footer ul {
 .column-4 img {
   height: 30px;
   width: 30px;
+}
+@media screen and (max-width: 576px) {
+  .main-header {
+    padding: 0 20px;
+  }
+  .navigation-bar ul {
+    display: none;
+  }
+  .banner-section {
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* padding: 0 150px; */
+    /* display: block; */
+    /* margin-bottom: 100px; */
+    /* gap: 60px; */
+    flex-direction: column-reverse;
+    /* display: flex; */
+    row-gap: 28px;
+  }
+  .banner-img {
+    width: 100%;
+  }
+  .banner-img img {
+    width: 100%;
+  }
+  .banner-left {
+    padding: 0 20px;
+  }
+  .card-title {
+    padding: 0 30px;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 15px;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  .flower-lover {
+    /* padding: 80px; */
+    margin: 0 0 100px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .flower-lover-heading {
+    margin-bottom: 16px;
+  }
+  .flower-heading p {
+    padding: 0 100px;
+  }
+  .flower-image-section {
+    flex-direction: column;
+  }
+  .badge {
+    display: none;
+  }
+
+  .custom-padding {
+    padding: 0 15px;
+  }
+  .flower-lover img {
+    width: 100%;
+  }
+  .flower-lover-heading {
+    font-size: 24px;
+  }
+  .footer-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+  #email {
+    width: 210px;
+    height: 100%;
+    /* padding: 15px 0 10px; */
+    /* padding: 10px 10px 10px 100px; */
+    color: #a9aaaf;
+    border: none;
+  }
+  .email-section {
+    display: flex;
+    width: 320px;
+  }
+  .bunch h2 {
+    font-size: 45px;
+  }
+  .img-1,
+  .img-2 {
+    width: 100%;
+    background-size: cover;
+  }
 }
