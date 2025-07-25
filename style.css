@@ -269,6 +269,7 @@ card-1 img {
   color: #ffffff;
   background-color: transparent;
   margin-bottom: 23px;
+  font-family: "Noto Serif", serif;
 }
 #email {
   width: 600px;
@@ -286,4 +287,47 @@ card-1 img {
   padding: 16px 40px;
   width: 270px;
   border: none;
+}
+/* end mainpart */
+footer {
+  margin: 0 150px 50px;
+  /* display: flex; */
+}
+.footer-section {
+  display: flex;
+  /* gap: 100px; */
+  justify-content: space-between;
+}
+footer img {
+  width: 100px;
+  height: 70px;
+}
+footer p {
+  font-size: 22px;
+  color: #a9aaaf;
+  font-family: "Inter", sans-serif;
+  /* gap: 10px; */
+  margin-bottom: 20px;
+}
+footer ul li {
+  list-style: none;
+  color: #a9aaaf;
+  /* gap: 30px; */
+}
+footer ul li a {
+  color: #a9aaaf;
+  text-decoration: none;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.column-4 {
+  display: flex;
+  gap: 20px;
+}
+.column-4 img {
+  height: 30px;
+  width: 30px;
 }
